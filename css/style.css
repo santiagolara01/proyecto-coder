@@ -6,7 +6,7 @@ html{font-family: 'roboto-l', sans-serif;}
 
 body{
     /* background-color: grey; */
-    background-image: url(../img/background.jpg); /* para probar como queda */
+    /* background-image: url(../img/background.jpg); para probar como queda */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,13 +17,27 @@ body{
 
 ul{list-style: none;}
 
+
+#seccion .contenedor { 
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carta{
+    padding: 25px;
+}
+
 .contenedor{
     max-width: 1400px;
-    margin: auto;}
+    margin: auto;;
+    display: flex;
+}
 
 header .logo{ 
     margin: 0;
-    padding: 25px 30px;
+    padding: 25px;
     font-weight: bold;
     color: blueviolet;
     font-size: 3rem;
@@ -31,16 +45,19 @@ header .logo{
 
 header .contenedor{ 
     display: flex;
-    flex-direction:row ;
+    justify-content: space-between;
     text-align: center;
-    
+    height:10vh;
+    background-color: rgb(0, 0, 0);
 }
 
 header nav{
     display: flex;
-    flex-direction: row;
-    padding-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+.navbar-brand{font-size: 2rem;}
 
 header a{
     padding: 5px 12px;
@@ -57,28 +74,18 @@ header a:hover{color: blueviolet;}
     align-items: center;
     text-align: center;
     flex-direction: column ;
-    
     height: 70vh;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
 #banner h1{
     color: rgba(255, 255, 255, 0.905);;
 }
-
-/* use el color aqua como para diferenciar los divs y practicar como cambian */
-/* div{
-    background-color: aqua;
-    margin:  50px  30px 50px 10px ; } */
-
-
-
-
 h1{font-size: 3.5rem;}
 h3{font-size: 1,5rem;}
+/* h2{color: white;} */
 
 button{
     font-size: 1.5rem;
@@ -92,12 +99,51 @@ button{
 }
 button:hover{background-color: rgb(49, 5, 90);}
 
-@media (min-widht: 720px){
-    header .contenedor{
-        flex-direction: row;
+
+
+#carta__articulo{
+    text-align: center;
+    background-color: grey;
+    color: whitesmoke;
+}
+#carta__articulo .contenedor{
+    padding: 100px
+}
+
+.carta_artic{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+    #carta__articulo p{
+    display: none;
+    }
+    
+    .carta{ 
+        padding: 25px;
+        ;}
+    .carta__articulo:first-child{background-image: url("img/zapa1.jpeg");
+    padding: 100px;
     }
 
-    header nav{
+    .carta__articulo:nth-child(2){background-image: url("img/zapa2.jpeg");
+    padding: 200px;
+    }
+
+    .carta__articulo:nth-child(3){background-image: url("img/zapa3.jpeg");
 
     }
-}    
+
+    #seccion{display: flex;
+        justify-content: space-between;
+
+    }
+    .card{
+    text-align: center;
+    background-color: lightblue;
+    color: aqua;
+    padding: 10px;
+}
+
+.carousel-inner{height: 70vh;}
+
