@@ -5,14 +5,7 @@
 html{font-family: 'roboto-l', sans-serif;}
 
 body{
-    /* background-color: grey; */
-    /* background-image: url(../img/background.jpg); para probar como queda */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     margin: 0;
-    background-attachment: fixed ;
 }
 
 ul{list-style: none;}
