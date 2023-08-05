@@ -1,26 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+
+<body class="contacto">
+    <!-- header -->
     <header>
-        <div class="contenedor">
-            <!-- <a href="index.html" class="logo"><img src="./img/ropita.png" alt=""></a> -->
-            <a href="../index.html"><p class="logo">W</p></a>
-            <nav>
-                <a href="./Hombres.html">Hombres</a>
-                <a href="./Mujeres.html">Mujeres</a>
-                <a href="./Nenes.html">Niños</a>
-                <a href="./SobreNosotros.html">Sobre Nosotros</a>
-                <a href="./Contacto.html">Contacto</a>   
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="costumer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-costumer-support">
+                        <span class="text">Soporte al Cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-radiation"></i>
+                    <h1 class="logo"><a href="../index.html">WNTD</a></h1>
+                </div>
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="./catalogo.html">Hombres</a></li>
+                    <li><a href="./catalogo.html">Mujeres</a></li>
+                    <li><a href="./catalogo.html">Niños</a></li>
+                    <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </nav>
         </div>
     </header>
-<h1> Contacto</h1>
+
+    
+    <section class="form-register">
+        <h4>Registro</h4>
+        <form action="register">
+
+            <input class="income" type="text" id="nombre" name="nombre" placeholder="Nombre del usuario" required>
+            <input class="income" type="text" id="apellido" name="apellido" placeholder="Apellido del usuario" required>
+            <input class="income" type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+            <input class="income" type="password" id="password" name="contrasena" placeholder="Contraseña" required>
+            <input class="income" type="password" id="confirm-password" name="confirm-password"
+            placeholder="Confirmar Contraseña" required>
+            
+            <p>Estoy de acuerdo con <a href="">Términos y Condiciones</a></p>
+            
+            <input class="form-button" type="submit" value="Registrarse">
+            <p><a href="">Ingresar con mi cuenta</a></p>
+        </form>
+        </section>
+        <footer class="footer">
+            <div class="container container-footer">
+                <div class="menu-footer">
+                    <div class="contact-info">
+                        <p class="title-footer">Información de Contacto</p>
+                        <ul>
+                            <li>Dirección: P. Sherman Calle Wallaby 42 Sydney</li>
+                            <li>Teléfono: 123-456-7890</li>
+                            <li>Email: Wanted-co@support.com</li>
+                        </ul>
+                        <div class="social-icons">
+                            <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
+                            <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                            <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                            <span class="pinterest"><i class="fa-brands fa-pinterest"></i></span>
+                            <span class="whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="information">
+                        <p class="title-footer">Información</p>
+                        <ul>
+                            <li><a href="#">Acerca de Nosotros </a></li>
+                            <li><a href="#">Información de Envío</a></li>
+                            <li><a href="#">Políticas de Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Contáctanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="my-account">
+                        <p class="title-footer">Mi cuenta</p>
+                        <ul>
+                            <li><a href="#">Mi cuenta</a></li>
+                            <li><a href="#">Historial de Pedidos</a></li>
+                            <li><a href="#">Lista de Deseados</a></li>
+                            <li><a href="#">Boletín</a></li>
+                            <li><a href="#">Reembolsos</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter">
+                        <p class="title-footer">Boletín informativo</p>
+                        <div class="content">
+                            <p>Suscríbete a nuestro boletín ahora y mantente al dia con nuestras nuevas colecciones y
+                                ofertas exclusivas</p>
+                            <a href="./Contacto.html">Registrate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Desarrollado por Santiago Lara &copy; 2023</p>
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/7d9b2d455c.js" crossorigin="anonymous"></script>
 </body>
+
+
+
 </html>
